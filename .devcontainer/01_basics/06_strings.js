@@ -15,7 +15,7 @@ console.log(new_name.indexOf('n'));//2
 
 const new_String = new_name.substring(0,5)//we cannot give negative values in substring
 console.log(new_String);//->The answer will be Tanis   h->will not be there
-console.log(new_String.slice(-4,4))
+console.log(new_String.slice(-4,4))//It starts from back
 
 const str = new String("               TANISH       SHARMA        ")
 console.log(str.trim()) //-> It will remove all white spaces from the starting and the end but not from the middle
