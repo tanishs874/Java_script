@@ -53,3 +53,10 @@ console.log(addfour(1,2,3,4));
 const add = (num1,num2) => ({username:"Tanish"})
 console.log(add(1,2));//{ username: 'Tanish' } This will be the output here 
 
+// const myarr = [1,2,3,4,5]
+// myarr.forEach(function(){})
+// myarr.forEach(()=>{})
+// myarr.forEach(()=>())
+
+
+
