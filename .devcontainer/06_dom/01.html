@@ -28,3 +28,130 @@
     </div>
 </body>
 </html>
+
+<!------------------------------------------- Notes ------------------------------------------------->
+
+1)document.getElementById('title')
+<!-- <h1 id = "title" class = "heading">DOM learning on chai aur code<span style = "display :none;">  Test text
+        </span></h1> -->
+
+2)document.getElementById('title').id
+<!-- 'title'-->
+
+3)document.getElementById('title').className
+<!-- 'heading' -->
+
+4)document.getElementById('title').getAttribute('id')
+<!-- 'title' -->
+
+5)document.getElementById('title').getAttribute('class')
+<!-- 'heading' -->
+
+6)document.getElementById('title').setAttribute('class','test')
+<!-- Here class = "heading" will be set to class = "test" -->
+
+7)We can also store the value in variables
+const title = document.getElementById('title')
+<!-- The value of document.getElementById('title') will be saved in title-->
+
+8)title.style.backgrounColor = 'green'
+
+9)title.style.padding = "15px"
+
+10)title.style.borderRadius = "15px"
+
+<!-- How to get content -->
+<!-- 3 ways to get content -->
+1)textContent
+2)innerHTML
+3)innerText
+
+1)title.textContent
+
+DOM learning on chai aur code Test text 
+
+hidden text is also visible in text content which is not visible on the browser
+
+2)title.innerText
+
+DOM learning on chai aur code 
+
+no hidden text is visible Here
+
+3)title.innerHTML
+
+<!-- DOM learning on chai aur code<span style = "display :none;">  Test text
+</span></h1>  -->
+
+Inner html will be visible Here
+
+<!-- querySelector -->
+
+1)document.querySelector('h2')----> It will select the first h2 present in the document
+<!-- Lorem ipsum dolor sit. -->
+
+2)document.querySelector('#title')
+<!-- <h1 id = "title" class = "heading">DOM learning on chai aur code<span style = "display :none;">  Test text
+        </span></h1> -->
+
+3)document.querySelector('.heading')
+
+<!-- <h1 id = "title" class = "heading">DOM learning on chai aur code<span style = "display :none;">  Test text
+        </span></h1> -->
+
+4)document.querySelector('input[type="password"]')
+
+5)document.querySelector('ul')
+<!-- <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul> -->
+
+6)const myul = document.querySelector('ul')
+
+7)myul.querySelector('li')
+
+8)const turgreen = myul.querySelector('li')
+
+9)turgreen.style.backgrounColor = 'green'
+
+10)turgreen.innerText ---> one
+
+11)turgrenn.inner = "five"---> value of one will be changed to five
+
+<!-- Node list and HTML collections are not pure Arrays -->
+
+querySelector()
+----> It returns HTML collections
+querySelectorAll()
+----> It returns Node list
+
+<!-- querySelectorAll -->
+
+document.querySelectorAll('li')--->It will returns us a node list
+
+const ans = document.querySelectorAll('li')
+
+ans[0].style.backgroundColor = 'green'----> This will change the color of list item no.1 to green
+
+<!-- forEachloop in querySelectorAll -->
+
+ans.forEach(function(l){
+    l.style.backgroundColor = 'green';
+})
+-----> This will change all the list items color to green
+
+
+<!-- document.getElementByClassName('list-items') -->
+It will  return html collections
+we can convert html collection to an Arrays
+
+const ans = document.getElementByClassName('list-items')
+
+how to change from html collection to Arrays
+
+Array.from(ans)
+const answer = Array.from(ans)
+
+NOw we can use for loop here as it is now conveted to an array
