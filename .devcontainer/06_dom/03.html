@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai or code</title>
+</head>
+<body style = "background-color: black;color: white;">
+</body>
+<script>
+const div = document.createElement('div')
+console.log(div);
+div.className="main"
+div.id="myid"
+div.id=Math.random()//generate a random number
+
+div.setAttribute("title","chai or code")
+div.style.backgroundColor="green"
+div.style.padding = "15px"
+
+//div.innerText = "chai or code"
+
+const addText = document.createTextNode("chai or code")
+div.append(addText)
+
+//How to attach to the document
+document.body.appendChild(div)
+
+
+
+</script>
+</html>

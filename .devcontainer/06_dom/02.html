@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | Chai aur code</title>
+</head>
+<body style = "background-color: black;color:white">
+    <div class="parent">
+        <!-- This is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+ const parent = document.querySelector('.parent')
+ console.log(parent);/* <div class="parent"></div>*/
+ console.log(parent.children);//HTMLCollection(4) [div.day, div.day, div.day, div.day]
+ console.log(parent.children[0]);//<div class="day">Monday</div>
+ console.log(parent.children[1].innerHTML);//Tuesday
+
+ for (let i = 0; i < parent.children.length; i++) {
+       console.log(parent.children[i].innerHTML);
+ }
+ //output of for loop will be 
+ //Monoday
+ //Tuesday
+ //Wednesday
+ //Thursday
+
+ parent.children[1].style.color="orange"//color of tuesday will be changed
+ console.log(parent.firstElementChild);//<div class="day">Monday</div>
+ console.log(parent.lastElementChild);//<div class="day">Tuesday</div>
+
+ const dayone = document.querySelector('.day')
+ console.log(dayone);////<div class="day">Monday</div>
+ console.log(dayone.parentElement);/* <div class="parent"></div>*/
+ console.log(dayone.nextElementSibling);//<div class = "day" style = "color:orange;">Tuesday</div>
+ 
+ console.log("NODES: ",parent.childNodes);//NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
+
+  
+</script>
+</html>.
