@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <h1> Chai aur Code </h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+// setTimeout(function(){
+//     console.log("Tanish");
+// },5000)
+
+const sayTanish = function(){
+    console.log("Tanish")
+}
+setTimeout(sayTanish,2000)
+
+const changetext = function(){
+    document.querySelector('h1').innerHTML = "Best js series"//This will change the name of h1 from Chai aur Code to Best js series.
+}
+// setTimeout(changetext,3000)
+const stopchange = setTimeout(changetext,3000)
+
+//Now if we want to stop this from changing Chai aur Code to Best js series we can use clearTimeout() here..
+
+document.querySelector('#stop').addEventListener('click',function(e){
+    clearTimeout(stopchange);//Here if we press on the stop button then the Text from Chai aur Code will not change to Best js series
+    console.log("STOPPED");
+})
+
+
+
+</script>
+</html>
