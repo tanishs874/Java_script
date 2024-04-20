@@ -4,7 +4,7 @@ const tinderUser = {}//This is a non-singelton object
 tinderUser.id = "123abc"
 tinderUser.name = "sammy"
 tinderUser.isloggedin = false;
-// console.log(tinderUser)
+console.log(tinderUser)//{ id: '123abc', name: 'sammy', isloggedin: false }
 
 const regular_user = {
     email:"someone@gmail.com",
@@ -40,11 +40,11 @@ const users = [{
 },{
 }
 ]
-console.log(users[0].email)
-console.log(users[1].location)
+console.log(users[0].email)//Tanish@google.com
+console.log(users[1].location)//village area
 console.log(Object.keys(tinderUser));// output will be in the format of array [ 'id', 'name', 'isloggedin' ]
 console.log(Object.values(tinderUser))// output will be in the format of array [ '123abc', 'sammy', false ]
 console.log(Object.entries(tinderUser))// output will be in the form of array within array [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isloggedin', false ] ]
 
-console.log(tinderuser.hasOwnProperty('islooged'))//false -> It will tell that it has this property or not
-console.log(tinderuser.hasOwnProperty('isloogedin'))//True -> It will tell that it has this property or not
+console.log(tinderUser.hasOwnProperty('islooged'))//false -> It will tell that it has this property or not
+console.log(tinderUser.hasOwnProperty('isloogedin'))//True -> It will tell that it has this property or not
