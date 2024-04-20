@@ -24,10 +24,10 @@ console.log(all_new_heroes);
 
 const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
 const real_another_array = another_array.flat(Infinity)
-console.log(real_another_array);
+console.log(real_another_array);//1,2,3,4,5,6,7,6,7,4,5
 
-console.log(Array.isArray("Tanish"))
-console.log(Array.from("Tanish"))
+console.log(Array.isArray("Tanish"))//false
+console.log(Array.from("Tanish"))//[ 'T', 'a', 'n', 'i', 's', 'h' ]
 console.log(Array.from({name:"Tanish"}))//Interesting  case it will return [] empty
 
 let score1 = 100
