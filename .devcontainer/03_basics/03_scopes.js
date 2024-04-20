@@ -49,6 +49,7 @@ if(true){
 
 
 //+++++++++++++++++++++++++++++++++INTERESTING+++++++++++++++++++++++++//
+//+++++++++++++++++++++++++++++++++Mini Hoisting +++++++++++++++++++++++//
 console.log(addone(5))//Here the output will be 6 . We can initialze the function before making .
 function addone(num){//This is a simple function
     return num+1
