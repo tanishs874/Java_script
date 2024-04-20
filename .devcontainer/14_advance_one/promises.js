@@ -141,7 +141,7 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 .catch((error) => console.log(error))
 
 
-//According to the written code firstly the output should be --->
+//According to the above written code firstly the output should be --->
 
 // Async taks is complete
 // Promise consumed
@@ -241,4 +241,4 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 // Error!!! JS went wrong
 // Error!!! JS went wrong
 
-// WE will see this in the future video 
+// This is because fetch() has more priority then all other so this is the reason for that 
