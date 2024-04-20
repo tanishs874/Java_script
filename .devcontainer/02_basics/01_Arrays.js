@@ -30,8 +30,8 @@ my_Array.shift()//it will remove the value of the 0th index//[0,1,2,3,4,5,6]
 // console.log(my_Array.indexOf(3));//-> 4
 
 const my_new_Array = my_Array.join()
-// console.log(my_Array);
-// console.log(my_new_Array);
+console.log(my_Array);//value in brackets
+console.log(my_new_Array);//0,1,2,3,4,5,6
 
 // console.log(typeof my_Array);//type of my_Array is object
 // console.log(typeof my_new_Array);//by using join() our Array is converted into string type so typeof is string
@@ -39,7 +39,7 @@ const my_new_Array = my_Array.join()
 //Difference between slice and splice 
 
 console.log("A ",my_Array)
-const new_array = my_Array.slice(1,3)
+const new_array = my_Array.slice(1,3)//3 will not include 
 console.log(new_array);//[1,2]
 console.log("B ",my_Array)//slice do not changes the original array 
 const newest_array = my_Array.splice(1,3)
