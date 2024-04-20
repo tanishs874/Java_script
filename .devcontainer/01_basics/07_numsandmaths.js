@@ -4,7 +4,7 @@ console.log(balance);//[Number: 400]
 console.log(score);//400
 
 console.log(balance.toString())//400
-console.log(balance.toString().length);
+console.log(balance.toString().length);//3
 console.log(balance.toFixed(2))//400.00
 console.log(balance.toFixed(3))//400.000
 
