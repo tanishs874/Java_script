@@ -11,7 +11,8 @@ function saymyName(){
 saymyName();
 
 function addTwoNumbers(number1 , number2){
-    console.log(number1+number2);// the function is not returning any type of value here
+    // console.log(number1+number2);// the function is not returning any type of value here
+    // return number1+number2;
 }
 addTwoNumbers()//Nan
 addTwoNumbers(3,4)//7
@@ -20,7 +21,7 @@ addTwoNumbers(3,"4")//34
 addTwoNumbers(3,"a")//3a
 
 const result = addTwoNumbers(3,5)
-console.log("Result ",result);//8 Result  undefined
+console.log("Result ",result);//8 Result  undefined--> when function is not returning any value then result will be undefined
 
 function addtwonumbers(num1,num2){
     console.log("Tanish")// It will be printed
@@ -41,4 +42,4 @@ function loginusermessage(username){
     return `${username} logged in successfully`
 }
 // console.log(loginusermessage("tanish"));//tanish logged in successfully
-console.log(loginusermessage());
+console.log(loginusermessage());//Undefined
