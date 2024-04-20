@@ -13,7 +13,7 @@ let userEmail;// Undefined
 
 const id = Symbol("123")
 const anotherid = Symbol("123")
-console.log(id===anotherid);
+console.log(id===anotherid);//false---> even if the values are same in the symbol , they will not be equal
 
 const bigNumber = 3456543576654356754n //This is Bigint
 
@@ -31,7 +31,7 @@ const myfunction = function(){
     console.log("hello world");
 }
 
-console.log(typeof anotherId);//->type of is Symbol
+console.log(typeof anotherid);//->type of is Symbol
 console.log(typeof outsideTemp);//-> typeof is object
 console.log(typeof scoreValue);//-> typeof is number
 console.log(typeof myfunction);//-> typeof is function
