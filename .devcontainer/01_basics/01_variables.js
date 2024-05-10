@@ -4,7 +4,7 @@ var account_password = "12345"
 account_city = "Ambala"
 let account_state;//if a varialbe is declared and value is not defined then its value will be undefined
 
-// account_id = 2 //We cannot change const here
+// account_id = 2 //We    cannot change const here
 
 account_email = "ts123@gmail.com"
 account_password = "54321"
